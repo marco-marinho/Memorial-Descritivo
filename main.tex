@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Project Titlepage Modified (v 0.1) by rcx
+%
+% Original Source: http://www.howtotex.com
+% Date: February 2014
+% 
+% This is a title page template which be used for articles & reports.
+% 
+% This is the modified version of the original Latex template from
+% aforementioned website.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{report}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+%\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\subsubsection*}{}{}
+\usepackage[labeled,resetlabels]{multibib}
+\newcites{aij}{Trabalhos publicados de divulgação dos
+produtos da área}
+\newcites{aic}{Trabalhos publicados na íntegra de
+divulgação dos produtos da área em eventos científicos}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\title{ \Large \textsc{Marco Antonio Marques Marinho}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Memorial Descritivo}}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize \today \vspace*{5\baselineskip}}
+
+\date{}
+
+
+\maketitle
+\tableofcontents
+\newpage
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+\sectionfont{\scshape}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+
+\section*{Formação Acadêmica}
+\addcontentsline{toc}{section}{Formação Acadêmica}
+
+Minha vida acadêmica no ensino superior começou em julho de 2005, quando ingressei no curso de Engenharia de Redes de Comunicação da Universidade de Brasília. Em Janeiro de 2011, já próximo a concluir o curso, começo a trabalhar como bolsista PIBIC com o Prof. João Paulo Carvalho Lutosa da Costa em um projeto que tinha como tema principal objetivo a utilização de tecnologias de álgebra multidimensionais aplicados ao processamento de sinais em arranjos de antenas.
+
+Em dezembro de 2012 concluo o curso de Engenharia de Redes de Comunicação após defender meu trabalho de conclusão de curso intitulado "Cooperative MIMO for Wireless Sensor Network and Antenna Array based Solutions for Unmanned Aerial Vehicles", que tinha como tema principal a utilização de técnicas de comunicação de múltiplas antenas para aumentar a eficiência energética de redes de sensores em fio e para possibilitar uma melhor coexistência entre essas e veículos aéreos não tripulados. Durante a graduação publiquei três artigos em anais de eventos.
+
+Após a conclusão da minha graduação surge, em Janeiro de 2013, o convite para que eu conduzisse o meu mestrado no Centro Aeroespacial Alemão. Inicio minhas atividades no referido centro em Maio de 2013 aonde permaneço até Dezembro de 2013 quando defendo minha dissertação de mestrado intitulada "Array Interpolation Methods with applications in Wireless Sensor Networks and Global Positioning Systems". A dissertação tem como tema o desenvolvimento de técnicas matemáticas que permitam o mapeamento de arranjos de antenas compostos por antenas com características imperfeitas em arranjos composto por antenas omnidirecionais ideais. Tais técnicas, desenvolvidas sob a supervisão dos professores João Paulo Carvalho Lustosa da Costa da Universidade de Brasília e Felix Antreich, então pesquisador do Centro Aeroespacial Alemão e hoje professor do Instituto Tecnológico da Aeronáutica, possibilitam a aplicação de técnicas importantes de processamento de sinais à arranjos de antenas com respostas e geometrias imperfeitas. Durante o mestrado publiquei oito artigos em anais de eventos.
+
+Em Janeiro de 2014 inicio meu doutorado junto a Universidade de Brasília sob a dos professores João Paulo Carvalho Lustosa da Costa da Universidade de Brasília e Felix Antreich. Durante o ano de 2014 resolvo os tramites burocráticos necessários para o meu retorno ao Centro Aeroespacial Alemão. Permaneço no referido centro até Dezembro de 2016, quando professor Felix Antreich se muda definitivamente para o Brasil. Durante esse período no Brasil e na Alemanha continuo trabalhando no tema de interpolação de arranjos, propondo técnicas de interpolação não lineares capazes de lidar com arranjos que possuam respostas e geometrias gravemente deficientes. Em Janeiro de 2017 inicio a ultima etapa do meu doutorado junto a Universidade de Halmstad na Suécia, após um acordo de cotutela ter sido firmado entre Halmstad e a Universidade de Brasília. Em Halmstad, sobre a tutela do professor Alexey Vinel eu estudo o problema de localização baseada em sinais de rádio e aplicada ao problema de localização de usuários de estrada vulneráveis, tais como pedestres e ciclistas. O método proposto foi testado utilizando medições realizadas com arranjos de antenas reais e apresentou resultados muito promissores.
+
+Em novembro de 2011 defendo minha tese na Universidade de Halmstad, intitulada "Array Processing Techniques for Direction of Arrival Estimation, Communications, and Localization in Vehicular and Wireless Sensor Networks". Com o trabalho desenvolvido durante a tese, foi possível publicar nove artigos em anais de eventos, um artigo em periódico além de submeter dois artigos para periódicos que encontram-se atualmente sob revisão. 
+
+\section*{Experiência de magistério ou afins}
+\addcontentsline{toc}{section}{Experiência de magistério ou afins}
+
+Durante meu mestrado atuei durante dois semestres como estagiário em docência na disciplina de processamento de sinais em arranjos na Universidade de Brasília. Atuei também outros dois semestres na mesma disciplina durante o meu doutorado, totalizando dois anos de atuação como docente em nível superior.
+
+\section*{Contribuições Científicas}
+\addcontentsline{toc}{section}{Contribuições Científicas}
+
+Durantes minha trajetória acadêmica tenho conduzido pesquisa em três frentes diferentes. Nessa seção as contribuições científicas serão classificadas de acordo com a respectiva linha de pesquisa.
+
+\subsection*{Interpolação de Arranjos de Antenas}
+\addcontentsline{toc}{subsection}{Interpolação de Arranjos de Antenas}
+
+Diversas técnicas clássicas de processamento de sinais em arranjos de antenas como o Iterative
+Quadratic Maximum Likelihood (IQML) \cite{Bresler1986},  Root Weighted Subspace Fitting (Root-WSF)
+\cite{Stoica1990a}, Root-MUSIC \cite{Barabell1983}, e ESPRIT \cite{Roy1989} exigem arranjos com respostas muito precisas e especificas, como Vandermonde ou centro-hermitiana esquerda. Em implementações reais de arranjos de antenas é muito difícil se obter uma resposta de arranjo que seja Vandermonde ou centro-hermitiana esquerda devido a muitos efeitos diferentes como o acoplamento mútuo das antenas, mudanças na posição da antena, tolerâncias dos materiais, imperfeições no hardware e o ambiente nos arredores do arranjo de antenas. Mesmo quando a construção de um arranjo de antenas com a resposta do arranjo desejada é possível, não há garantia de que a resposta do arranjo será mantida invariante ao longo do tempo, por exemplo, devido ao desgaste e a temperatura. Como solução para essas limitações, foi proposta a interpolação de arranjo (mapeamento) \cite{Bronez1988}. Uma resposta de arranjo arbitrária é mapeada para uma resposta de arranjo Vandermonde ou centro-hermitiana esquerda desejada. Nesta linha de pesquisa, métodos de interpolação que levam em conta múltiplos setores de forma adaptativa e que minimizam imprecisões introduzidas pela transformação foram desenvolvidos. Os métodos propostos durante os estudos realizados nessa linha de pesquisa permitiram lidar com sinais altamente correlacionados aplicando-se FBA \cite{Pillai1989} e / ou SPS \cite{Evans1982} e possibilitaram estimação de parâmetros de alta resolução de forma analítica usando-se o método ESPRIT com uma decomposição generalizada em valores singulares (genralized singular value decomposition, GSVD). Essa abordagem não-uniforme de interpolação de arranjos adaptativas em relação aos dados também foi desenvolvida levando-se em conta o processamento de sinais em arranjos multidimensionais. Além disso, métodos inovadores de interpolação que utilizam técnicas não lineares também foram propostos. Portanto, métodos de estimação de parâmetro de alta resolução que usam processamento de sinais multidimensionais com baixa complexidade se tornaram possíveis para respostas de arranjo arbitrárias.
+
+Os trabalhos produzidos nessa linha de pesquisa foram os seguintes:
+
+\nociteaij{marinho2018robust}
+\bibliographystyleaij{plain}
+\bibliographyaij{library2}
+
+\nociteaic{marinho2016adaptive,Marinho2014a,Marinho2015a,caizzone2017direction,marinho2016array,Marinho2014,Marinho2015}
+\bibliographystyleaic{plain}
+\bibliographyaic{library2}
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+% REFERENCES
+%-------------------------------------------------------------------------------
+\newpage
+\addcontentsline{toc}{section}{Referência Bibliográficas}
+
+\bibliographystyle{plain}
+\bibliography{library2}
+
+
+\end{document}
+
+%-------------------------------------------------------------------------------
+% SNIPPETS
+%-------------------------------------------------------------------------------
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{file_name}
+%	\caption{}
+%	\centering
+%	\label{label:file_name}
+%\end{figure}
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{graph}
+%	\caption{Blood pressure ranges and associated level of hypertension (American Heart Association, 2013).}
+%	\centering
+%	\label{label:graph}
+%\end{figure}
+
+%\begin{wrapfigure}{r}{0.30\textwidth}
+%	\vspace{-40pt}
+%	\begin{center}
+%		\includegraphics[width=0.29\textwidth]{file_name}
+%	\end{center}
+%	\vspace{-20pt}
+%	\caption{}
+%	\label{label:file_name}
+%\end{wrapfigure}
+
+%\begin{wrapfigure}{r}{0.45\textwidth}
+%	\begin{center}
+%		\includegraphics[width=0.29\textwidth]{manometer}
+%	\end{center}
+%	\caption{Aneroid sphygmomanometer with stethoscope (Medicalexpo, 2012).}
+%	\label{label:manometer}
+%\end{wrapfigure}
+
+%\begin{table}[!ht]\footnotesize
+%	\centering
+%	\begin{tabular}{cccccc}
+%	\toprule
+%	\multicolumn{2}{c} {Pearson's correlation test} & \multicolumn{4}{c} {Independent t-test} \\
+%	\midrule	
+%	\multicolumn{2}{c} {Gender} & \multicolumn{2}{c} {Activity level} & \multicolumn{2}{c} {Gender} \\
+%	\midrule
+%	Males & Females & 1st level & 6th level & Males & Females \\
+%	\midrule
+%	\multicolumn{2}{c} {BMI vs. SP} & \multicolumn{2}{c} {Systolic pressure} & \multicolumn{2}{c} {Systolic Pressure} \\
+%	\multicolumn{2}{c} {BMI vs. DP} & \multicolumn{2}{c} {Diastolic pressure} & \multicolumn{2}{c} {Diastolic pressure} \\
+%	\multicolumn{2}{c} {BMI vs. MAP} & \multicolumn{2}{c} {MAP} & \multicolumn{2}{c} {MAP} \\
+%	\multicolumn{2}{c} {W:H ratio vs. SP} & \multicolumn{2}{c} {BMI} & \multicolumn{2}{c} {BMI} \\
+%	\multicolumn{2}{c} {W:H ratio vs. DP} & \multicolumn{2}{c} {W:H ratio} & \multicolumn{2}{c} {W:H ratio} \\
+%	\multicolumn{2}{c} {W:H ratio vs. MAP} & \multicolumn{2}{c} {\% Body fat} & \multicolumn{2}{c} {\% Body fat} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Height} & \multicolumn{2}{c} {Height} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Weight} & \multicolumn{2}{c} {Weight} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Heart rate} & \multicolumn{2}{c} {Heart rate} \\
+%	\bottomrule
+%	\end{tabular}
+%	\caption{Parameters that were analysed and related statistical test performed for current study. BMI - body mass index; SP - systolic pressure; DP - diastolic pressure; MAP - mean arterial pressure; W:H ratio - waist to hip ratio.}
+%	\label{label:tests}
+%\end{table}
