@@ -10,7 +10,7 @@
 % aforementioned website.
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt]{report}
+\documentclass[12pt]{article}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
@@ -29,9 +29,17 @@
 \patchcmd{\thebibliography}{\chapter*}{\subsubsection*}{}{}
 \usepackage[labeled,resetlabels]{multibib}
 \newcites{aij}{Trabalhos publicados de divulgação dos
-produtos da área}
+produtos da área - Interpolação de Arranjo}
 \newcites{aic}{Trabalhos publicados na íntegra de
-divulgação dos produtos da área em eventos científicos}
+divulgação dos produtos da área em eventos científicos- Interpolação de Arranjo}
+
+\newcites{rsj}{Trabalhos publicados de divulgação dos
+produtos da área - Redes de Sensores}
+\newcites{rsc}{Trabalhos publicados na íntegra de
+divulgação dos produtos da área em eventos científicos - Redes de Sensores}
+
+\newcites{rlc}{Trabalhos publicados na íntegra de
+divulgação dos produtos da área em eventos científicos - Rádio Localização}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
@@ -41,9 +49,9 @@ divulgação dos produtos da área em eventos científicos}
 %-------------------------------------------------------------------------------
 % HEADER & FOOTER
 %-------------------------------------------------------------------------------
-\pagestyle{fancy}
-\fancyhf{}
-\setlength\headheight{15pt}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\setlength\headheight{15pt}
 %-------------------------------------------------------------------------------
 % TITLE PAGE
 %-------------------------------------------------------------------------------
@@ -61,6 +69,8 @@ divulgação dos produtos da área em eventos científicos}
 
 
 \maketitle
+\newpage
+
 \tableofcontents
 \newpage
 
@@ -73,35 +83,47 @@ divulgação dos produtos da área em eventos científicos}
 % BODY
 %-------------------------------------------------------------------------------
 
-\section*{Formação Acadêmica}
-\addcontentsline{toc}{section}{Formação Acadêmica}
+\section{Formação Acadêmica}
 
-Minha vida acadêmica no ensino superior começou em julho de 2005, quando ingressei no curso de Engenharia de Redes de Comunicação da Universidade de Brasília. Em Janeiro de 2011, já próximo a concluir o curso, começo a trabalhar como bolsista PIBIC com o Prof. João Paulo Carvalho Lutosa da Costa em um projeto que tinha como tema principal objetivo a utilização de tecnologias de álgebra multidimensionais aplicados ao processamento de sinais em arranjos de antenas.
+Minha vida acadêmica no ensino superior começou em julho de 2005, quando ingressei no curso de Engenharia de Redes de Comunicação da Universidade de Brasília. Em Janeiro de 2011, já próximo a concluir o curso, começo a trabalhar como bolsista PIBIC com o Prof. João Paulo Carvalho Lustosa da Costa em um projeto que tinha como  principal objetivo a utilização de tecnologias de álgebra multidimensionais aplicados ao processamento de sinais em arranjos de antenas.
 
 Em dezembro de 2012 concluo o curso de Engenharia de Redes de Comunicação após defender meu trabalho de conclusão de curso intitulado "Cooperative MIMO for Wireless Sensor Network and Antenna Array based Solutions for Unmanned Aerial Vehicles", que tinha como tema principal a utilização de técnicas de comunicação de múltiplas antenas para aumentar a eficiência energética de redes de sensores em fio e para possibilitar uma melhor coexistência entre essas e veículos aéreos não tripulados. Durante a graduação publiquei três artigos em anais de eventos.
 
 Após a conclusão da minha graduação surge, em Janeiro de 2013, o convite para que eu conduzisse o meu mestrado no Centro Aeroespacial Alemão. Inicio minhas atividades no referido centro em Maio de 2013 aonde permaneço até Dezembro de 2013 quando defendo minha dissertação de mestrado intitulada "Array Interpolation Methods with applications in Wireless Sensor Networks and Global Positioning Systems". A dissertação tem como tema o desenvolvimento de técnicas matemáticas que permitam o mapeamento de arranjos de antenas compostos por antenas com características imperfeitas em arranjos composto por antenas omnidirecionais ideais. Tais técnicas, desenvolvidas sob a supervisão dos professores João Paulo Carvalho Lustosa da Costa da Universidade de Brasília e Felix Antreich, então pesquisador do Centro Aeroespacial Alemão e hoje professor do Instituto Tecnológico da Aeronáutica, possibilitam a aplicação de técnicas importantes de processamento de sinais à arranjos de antenas com respostas e geometrias imperfeitas. Durante o mestrado publiquei oito artigos em anais de eventos.
 
-Em Janeiro de 2014 inicio meu doutorado junto a Universidade de Brasília sob a dos professores João Paulo Carvalho Lustosa da Costa da Universidade de Brasília e Felix Antreich. Durante o ano de 2014 resolvo os tramites burocráticos necessários para o meu retorno ao Centro Aeroespacial Alemão. Permaneço no referido centro até Dezembro de 2016, quando professor Felix Antreich se muda definitivamente para o Brasil. Durante esse período no Brasil e na Alemanha continuo trabalhando no tema de interpolação de arranjos, propondo técnicas de interpolação não lineares capazes de lidar com arranjos que possuam respostas e geometrias gravemente deficientes. Em Janeiro de 2017 inicio a ultima etapa do meu doutorado junto a Universidade de Halmstad na Suécia, após um acordo de cotutela ter sido firmado entre Halmstad e a Universidade de Brasília. Em Halmstad, sobre a tutela do professor Alexey Vinel eu estudo o problema de localização baseada em sinais de rádio e aplicada ao problema de localização de usuários de estrada vulneráveis, tais como pedestres e ciclistas. O método proposto foi testado utilizando medições realizadas com arranjos de antenas reais e apresentou resultados muito promissores.
+Em Janeiro de 2014 inicio meu doutorado junto a Universidade de Brasília sob a tutela dos professores João Paulo Carvalho Lustosa da Costa da Universidade de Brasília e Felix Antreich. Durante o ano de 2014 resolvo os trâmites burocráticos necessários para o meu retorno ao Centro Aeroespacial Alemão. Permaneço no referido centro até Dezembro de 2016, quando o professor Felix Antreich se muda definitivamente para o Brasil. Durante esse período no Brasil e na Alemanha continuo trabalhando no tema de interpolação de arranjos, propondo técnicas de interpolação não lineares capazes de lidar com arranjos que possuam respostas e geometrias gravemente deficientes. Em Janeiro de 2017 inicio a última etapa do meu doutorado junto a Universidade de Halmstad na Suécia, após um acordo de cotutela ter sido firmado entre a Universidade de Halmstad e a Universidade de Brasília. Em Halmstad, sobre a tutela do professor Alexey Vinel eu estudo o problema de localização baseada em sinais de rádio e aplicada ao problema de localização de usuários de estrada vulneráveis, tais como pedestres e ciclistas. O método proposto foi testado utilizando medições realizadas com arranjos de antenas reais e apresentou resultados muito promissores.
 
-Em novembro de 2011 defendo minha tese na Universidade de Halmstad, intitulada "Array Processing Techniques for Direction of Arrival Estimation, Communications, and Localization in Vehicular and Wireless Sensor Networks". Com o trabalho desenvolvido durante a tese, foi possível publicar nove artigos em anais de eventos, um artigo em periódico além de submeter dois artigos para periódicos que encontram-se atualmente sob revisão. 
+Em novembro de 2017 defendo minha tese na Universidade de Halmstad, intitulada "Array Processing Techniques for Direction of Arrival Estimation, Communications, and Localization in Vehicular and Wireless Sensor Networks". Com o trabalho desenvolvido durante a tese, foi possível publicar nove artigos em anais de eventos, um artigo em periódico além de submeter dois artigos para periódicos que encontram-se atualmente sob revisão. 
 
-\section*{Experiência de magistério ou afins}
-\addcontentsline{toc}{section}{Experiência de magistério ou afins}
+\section{Experiência de magistério ou afins}
 
 Durante meu mestrado atuei durante dois semestres como estagiário em docência na disciplina de processamento de sinais em arranjos na Universidade de Brasília. Atuei também outros dois semestres na mesma disciplina durante o meu doutorado, totalizando dois anos de atuação como docente em nível superior.
 
-\section*{Contribuições Científicas}
-\addcontentsline{toc}{section}{Contribuições Científicas}
+\section{Contribuições Científicas}
 
 Durantes minha trajetória acadêmica tenho conduzido pesquisa em três frentes diferentes. Nessa seção as contribuições científicas serão classificadas de acordo com a respectiva linha de pesquisa.
 
-\subsection*{Interpolação de Arranjos de Antenas}
-\addcontentsline{toc}{subsection}{Interpolação de Arranjos de Antenas}
+\subsection{Interpolação de Arranjos de Antenas}
 
 Diversas técnicas clássicas de processamento de sinais em arranjos de antenas como o Iterative
 Quadratic Maximum Likelihood (IQML) \cite{Bresler1986},  Root Weighted Subspace Fitting (Root-WSF)
-\cite{Stoica1990a}, Root-MUSIC \cite{Barabell1983}, e ESPRIT \cite{Roy1989} exigem arranjos com respostas muito precisas e especificas, como Vandermonde ou centro-hermitiana esquerda. Em implementações reais de arranjos de antenas é muito difícil se obter uma resposta de arranjo que seja Vandermonde ou centro-hermitiana esquerda devido a muitos efeitos diferentes como o acoplamento mútuo das antenas, mudanças na posição da antena, tolerâncias dos materiais, imperfeições no hardware e o ambiente nos arredores do arranjo de antenas. Mesmo quando a construção de um arranjo de antenas com a resposta do arranjo desejada é possível, não há garantia de que a resposta do arranjo será mantida invariante ao longo do tempo, por exemplo, devido ao desgaste e a temperatura. Como solução para essas limitações, foi proposta a interpolação de arranjo (mapeamento) \cite{Bronez1988}. Uma resposta de arranjo arbitrária é mapeada para uma resposta de arranjo Vandermonde ou centro-hermitiana esquerda desejada. Nesta linha de pesquisa, métodos de interpolação que levam em conta múltiplos setores de forma adaptativa e que minimizam imprecisões introduzidas pela transformação foram desenvolvidos. Os métodos propostos durante os estudos realizados nessa linha de pesquisa permitiram lidar com sinais altamente correlacionados aplicando-se FBA \cite{Pillai1989} e / ou SPS \cite{Evans1982} e possibilitaram estimação de parâmetros de alta resolução de forma analítica usando-se o método ESPRIT com uma decomposição generalizada em valores singulares (genralized singular value decomposition, GSVD). Essa abordagem não-uniforme de interpolação de arranjos adaptativas em relação aos dados também foi desenvolvida levando-se em conta o processamento de sinais em arranjos multidimensionais. Além disso, métodos inovadores de interpolação que utilizam técnicas não lineares também foram propostos. Portanto, métodos de estimação de parâmetro de alta resolução que usam processamento de sinais multidimensionais com baixa complexidade se tornaram possíveis para respostas de arranjo arbitrárias.
+\cite{Stoica1990a}, Root-MUSIC \cite{Barabell1983}, e ESPRIT \cite{Roy1989} exigem arranjos com respostas muito precisas e especificas, como Vandermonde ou centro-hermitiana esquerda. Em implementações reais de arranjos de antenas é muito difícil se obter uma resposta de arranjo que seja Vandermonde ou centro-hermitiana esquerda devido à diversos efeitos diferentes como o acoplamento mútuo das antenas, mudanças na posição das antenas, tolerâncias dos materiais envolvidos na fabricação, imperfeições no hardware e ao ambiente nos arredores do arranjo de antenas. Mesmo quando a construção de um arranjo de antenas com a resposta do arranjo desejada é possível, não há garantia de que a resposta do arranjo será mantida invariante ao longo do tempo, por exemplo, devido ao desgaste e a temperatura. 
+
+Como solução para essas limitações, foi proposta a interpolação de arranjo (mapeamento) \cite{Bronez1988}. Uma resposta de arranjo arbitrária é mapeada para uma resposta de arranjo Vandermonde ou centro-hermitiana esquerda desejada. Nesta linha de pesquisa, métodos de interpolação que levam em conta múltiplos setores de forma adaptativa ao sinal recebido e que minimizam imprecisões introduzidas pela interpolação foram desenvolvidos. Os métodos propostos durante os estudos realizados nessa linha de pesquisa permitiram lidar com sinais altamente correlacionados aplicando-se FBA \cite{Pillai1989} e / ou SPS \cite{Evans1982} e possibilitaram a estimação de parâmetros com alta resolução e de forma analítica usando-se o método ESPRIT com uma decomposição generalizada em valores singulares (genralized singular value decomposition, GSVD). 
+
+Essa abordagem não-uniforme de interpolação de arranjos adaptativa em relação ao sinal também foi estendida levando-se em conta o processamento de sinais em arranjos multidimensionais. Além disso, métodos inovadores de interpolação que utilizam técnicas não lineares também foram propostos. 
+
+Portanto, métodos de estimação de parâmetro de alta resolução que usam processamento de sinais multidimensionais com baixa complexidade se tornaram possíveis para respostas de arranjo arbitrárias. Usando-se a interpolação de arranjos é possível a aplicação de métodos de processamento de sinais em arranjos a cenários que antes não atendiam os requisitos necessários para isso. Por exemplo, a utilização de técnicas de processamento de sinais em arranjo em celulares e dispositivos GPS portáteis pode se tornar uma realidade.
+
+Em suma, as contribuições apresentadas nessa linha de pesquisa foram:
+\begin{enumerate}
+\item Um método adaptativo ao sinal para a definição de setores para a interpolação. Evitando a introdução de imprecisão por interpolações generalistas.
+\item Dois métodos de discretização de respostas de arranjos que preservam as características estatísticas do modelo matemático transformado. 
+\item Uma abordagem linear para a interpolação que busca minimizar o erro que a Propriá interpolação introduz.
+\item Uma extensão multidimensional para a abordagem linear, permitindo sua aplicação a arranjos com um numero de dimensões arbritário. 
+\item Duas abordagens de interpolação não lineares capazes de lidar com arranjos que possuam respostas altamente distorcidas.
+\item A performance dos métodos propostos foi testada utilizando medições com equipamentos reais.
+\end{enumerate}
 
 Os trabalhos produzidos nessa linha de pesquisa foram os seguintes:
 
@@ -113,8 +135,75 @@ Os trabalhos produzidos nessa linha de pesquisa foram os seguintes:
 \bibliographystyleaic{plain}
 \bibliographyaic{library2}
 
+\subsection{Técnicas MIMO Cooperativas para Redes de Sensores sem Fio}
 
+Redes de sensores sem fio são coleções de dispositivos eletrônicos de pequeno porte com capacidade de se comunicar entre si e de sensorear parâmetros do ambiente ao seu redor. Devido ao seu baixo custo e ao seu pequeno porte esses dispositivos podem ser aplicados para monitorar diversos tipos de fenômenos. A utilização de redes de sensores sem fio vai desde o campo militar até a aplicação automática de remédios em ambiente hospitalares \cite{Akyildiz2002} 
 
+As reservas limitadas de energia disponíveis para os dispositivos de redes de sensores ainda restringe as suas possíveis aplicações. Portanto, um dos principais desafios a serem vencidos nesse tópico é a eficiência energética das comunicações entre os sensores da rede. Como forma de prover ganhos de eficiência energética foi proposta, nessa linha de pesquisa, a utilização de técnicas de comunicação MIMO (multiple input multiple output). Com essas técnicas é possível se transmitir dados a longas distâncias sem que as reservas energéticas da rede sejam afetadas de desfavorável. Isso porque utilizando-se as técnicas propostas, os sensores formam grupos de comunicação MIMO com os seus vizinhos, possibilitando que os custos de comunicação sejam divididos entre eles e evitando que a informação tenha que ser transmitida de forma encadeada na rede, o que também pode resultar em grandes atrasos na entrega de dados. 
+
+Por mais eficiente que sejam as comunicações, as reservas energéticas dos sensores da rede ainda se esgotarão em algum momento. Falhas de sensores individuais na rede podem resultar em redes que não estão mais completamente conectadas entre si, com ilhas de sensores incomunicáveis. Como a substituição de sensores individuais pode não ser sempre uma opção, nessa linha de pesquisa foi proposta a utilização de veículos aéreos não tripulados (VANT) como nós móveis na rede de forma a melhorar a longevidade e a robustez de uma rede de sensores. Nesse sentido foram propostos métodos para o controle do movimento desses veículos em relação aos sensores da rede e formas de se estabelecer conexões mais estáveis entre os sensores estáticos e os sensores móveis.
+
+Com isso a utilização de redes de sensores em situações extremas, como cenários de catrástofe, se torna uma alternativa para o monitoramento e para prover cobertura de serviços de comunicação celular no caso de falha da infraestrutura local permanente.
+
+Em suma, as contribuições apresentadas nessa linha de pesquisa foram:
+\begin{enumerate}
+\item Um estudo sobre a eficiência energética quando utilizado MIMO cooperativo em comparação a técnicas de comunicação comuns em redes de sensores. 
+\item Uma análise do impacto de erros de sincronização entre sensores no desempenho do MIMO cooperativo. 
+\item Um estudo da propagação dos erros de sincronização dentro de uma rede de sensores. A partir desse estudo a derivação de uma formula fechada para o intervalo re-sincronização. 
+\item Dois métodos para sincronização em redes de sensores.
+\item Um método adaptativo para a seleção do tamanha dos grupos operando com MIMO cooperativo de forma a maximizar a eficiência e homogeneizar a distribuição energética na rede.
+\item Métodos de controle de movimentos de VANTs para maximizar a cobertura em redes de sensores esparsas.
+\end{enumerate}
+
+Os trabalhos produzidos nessa linha de pesquisa foram os seguintes:
+
+\nocitersj{Freitas2012,marinho2013e,de2015practical}
+\bibliographystylersj{plain}
+\bibliographyrsj{library2}
+
+\nocitersc{Marinho2014c,marinho2013d,miranda2014,marinho2016adaptive,maranhao2016multi,Junior2014,Marinho2013,marinho2013a}
+\bibliographystylersc{plain}
+\bibliographyrsc{library2}
+
+\subsection{Localização Baseada em Rádio}
+
+Redes veiculares são uma tecnologia promissora que possui aplicações interessantes como segurança em estradas, controle de trafego, veículos autônomos e platooning \cite{kumar2013applications}. Muitas dessas aplicações requerem que a localização de todos os veículos que compõe a rede veicular seja conhecida ou possa ao menos ser estimada com um auto grau de precisão. Além disso, as estimativas obtidas não devem somente ser precisas, mas devem também ser confiáveis. Segurança em estradas, veículos autônomos e controle de trafego também requerem que os veículos sejam capazes de estimar e processar a posição de usuários vulneráveis, tais como pedestres e ciclistas, assim como a posição de outros veículos ao seu redor.
+
+Para a detecção de usuários vulneráveis vários métodos foram propostos. Esses métodos devem ser precisos e rápidos o suficiente para atender diferentes exigências de segurança que se referem a um grande grupo de possíveis situações \cite{habibovic2011requirements}. A maioria dos métodos de detecção presentes na literatura utilizam visão computacional \cite{gavrila2004vision}. Esses métodos são capazes de níveis de precisão próximos de 75\% \cite{dollar2012pedestrian,geronimo2010survey}, o que pode ser insuficiente para sistemas criticos de segurança, como sistemas de prevenção de acidentes.
+
+Nessa linha de pesquisa foram propostos métodos para a detecção de veículos e usuários vulneráveis utilizando as transmissões de rádio feitas por cada um deles. Usuários vulneráveis podem ser detectados com base nas transmissões feitas, por exemplo, a partir de seus celulares. Já outros veículos podem ter suas posições estimadas com base nos dados que transmitem entre si na rede veicular, não sendo necessários sinais específicos para localização, o que diminui a carga sobre a rede.
+
+Os métodos propostas também pode ser aplicados a veículos aéreos. A principio, foi proposto nessa linha de pesquisa a estimação de posição e atitude de veículos aéreos não tripulados. As técnicas propostas poderiam ser diretamente aplicadas a aviões comerciais, provendo uma camada adicional de segurança em pousos ou decolagens por instrumento, por exemplo.
+
+As técnicas de localização foram testadas utilizando-se medições reais e provou ser capaz de atingir um precisão no nível de centímetros. Portanto, as técnicas propostas nessa linha de pesquisa são extremamente promissoras para aplicações reais de segurança e automação em veículos.
+
+Em suma, as contribuições apresentadas nessa linha de pesquisa foram:
+\begin{enumerate}
+\item Um método de localização baseado em estimação da direção de chegada de sinais de rádio com baixo custo computacional.
+\item Um método de localização que utiliza a direção de chegada e a distância estimada de um transmissor. Esse método usa a relação geométrica entre estimações feitas em locais diferentes para acelerar a obtenção de um localização. 
+\item Uma nova parametrização para o problema que permite uma estimação conjunta dos parâmetros de um sinal recebido em locais diferentes.
+\item Métodos de localização que não requerem transmissão de dados específicos e que podem ser utilizados para reduzir ameaças como spoofing em redes veiculares. 
+\end{enumerate}
+
+Os trabalhos produzidos nessa linha de pesquisa foram os seguintes:
+\nociterlc{Junior2012,Marinho2013b,marinho2017antenna}
+\bibliographystylerlc{plain}
+\bibliographyrlc{library2}
+
+\subsection{Participação em projetos, programas e
+ações de extensão e pesquisa}
+
+Atuei de 2013 até 2014 como bolsista do projeto Projeto SIGA estabelecido entre a Universidade de Brasília e o Ministério do Planejamento aonde desenvolvi ferramentas de aprendizado de máquina para detectar fraudes nas folhas de pagamento do governo.
+
+Desde de Maio de 2018 atuo no Projeto Infogov entre a Universidade de Brasília e a Escola Nacional de Administração Pública aonde gerencio a equipe que desenvolve um portal para facilitar a visualização de informações referentes ao serviço público federal.
+
+\section{Atividades Profissionais ligadas à área/subárea do concurso}
+
+Durante meu doutorado atuei como Research Fellow no Centro Aeroespacial Alemão de 2015 até 2016. Após esse período atuei por um ano como Research Engineer na Universidade de Halmstad de 2017 até o início de 2018.
+
+\section{Outras atividades correlatas}
+
+Trabalhei como Escriturário no Banco do Brasil de 2009 até 2013, durante esse período desenvolvi ferramentas em Java para automatizar tarefas diários do setor de serviços judiciais.
 
 
 
